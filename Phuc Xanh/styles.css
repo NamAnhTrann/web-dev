@@ -1,7 +1,7 @@
 :root {
     /* Colors */
-    --primary-color: #00796b;
-    --secondary-color: #004d40;
+    --primary-color: #001f1b;
+    --secondary-color: #fe0000;
     --background-color: #f5f5f5;
     --text-color: #333;
     --text-muted-color: #666;
@@ -14,3 +14,102 @@
     --secondary-font: 'Helvetica, sans-serif';
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--primary-font);
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+/* Navigation Bar */
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--primary-color);
+    padding: 1rem 2rem;
+}
+
+.logo {
+    height: 50px;
+}
+
+.nav-items-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-items {
+    list-style: none;
+    display: flex;
+    gap: 1rem; /* Adding gap to separate items */
+}
+
+.nav-items li {
+    margin: 0; /* Ensure no margin is added */
+}
+
+.nav-items a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-items a:hover {
+    color: var(--secondary-color);
+}
+
+/* Navigation Icons */
+.nav-icons {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Ensures icons are pushed to the far right */
+}
+
+.nav-icons i {
+    color: var(--white);
+    font-size: 1.2rem;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.cart-link {
+    text-decoration: none;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.cart-link i {
+    margin-left: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.cart-link:hover i {
+    color: var(--secondary-color);
+}
+
+/* Background Header */
+.background-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    background-color: var(--secondary-color);
+    color: var(--white);
+    text-align: center;
+}
+
+.background-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
