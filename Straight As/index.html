@@ -1,37 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Straight A</title>
-        <link rel="stylesheet" href="styles.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    </head>
-    <body>
-        <nav class="nav-bar">
-            <a href="index.html">
-                <img src="logo.png" alt="Logo" class="logo">
-            </a>
-            <div class="nav-items-container">
-                <ul class="nav-items">
-                    <li><a href = "login.html">Login</a></li>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="upgrade.html">Upgrade</a></li>
-                    <li><a href="upload.html">Upload</a></li>
-                </ul>
-            </div>
-        </nav>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Straight A's</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <nav class="nav-bar">
+        <a href="index.html">
+            <img src="images/output-onlinepngtools_2.png" alt="Logo" class="logo">
+        </a>
+        <div class="nav-items-container">
+            <ul class="nav-items">
+                <li><a href="login.html">Login</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="upgrade.html">Category</a></li>
+                <li><a href="upload.html">About Us</a></li>
+            </ul>
+        </div>
+    </nav>
 
-        <section class = "search-bar-content">
-            <h1>Straight A's</h1>
-            <p>Step by Step Solutions, Completely Free</p>
-            <div class="search-bar">
-                <textarea id="expandingTextarea" placeholder="Seek your wisdom"></textarea>
-                <button class="search-button">Search</button>  
-            </div>
-        </section>
-        <script src="script.js"></script>
+    <section class="search-bar-content">
+        <h1>Straight A's</h1>
+        <p>Step by Step Solutions, Completely Free</p>
+        <form class="search-bar" action="search.html" method="GET" onsubmit="return handleSearch()">
+            <textarea id="expandingTextarea" name="query" placeholder="Seek your wisdom"></textarea>
+            <button type="submit" style="display: none;" id="hiddenSubmit">Submit</button> <!-- Hidden submit button -->
+        </form>
+        <div class="button-container">
+            <button class="search-button" type="button" onclick="triggerSearch()">Search</button>
+        </div>
+    </section>
 
-
-    </body>
-</html> 
+    <script src="script.js"></script>
+</body>
+</html>
